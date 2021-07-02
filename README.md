@@ -1,9 +1,11 @@
 # <img src="./icons/icon-colored.svg" width="22px"> Custom Search Engine
 
+[<img src="./images/download-button.svg" height="48px">](https://addons.mozilla.org/en-US/firefox/addon/custom-search-engines/)
+
 *A Firefox extension for easily adding custom search engines*
 
-<img src="./screenshots/searchbar-icon.png"><br>
-<img src="./screenshots/popup.png" height="350px"> <img src="./screenshots/context-menu.png" height="350px">
+<img src="./images/popup.png" height="350px"> <img src="./images/context-menu.png" height="350px"><br>
+<img src="./images/searchbar-icon.png">
 
 ---
 
