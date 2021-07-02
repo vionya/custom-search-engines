@@ -1,0 +1,44 @@
+{
+    "manifest_version": 2,
+    "name": "Custom Search Engines",
+    "version": "1.0",
+    "description": "Add custom search engines for anything",
+    "permissions": [
+        "activeTab",
+        "https://paste.mozilla.org/api/",
+        "menus"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "content-scripts/injected.js"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "icons": {
+        "16": "icons/icon-colored.svg",
+        "32": "icons/icon-colored.svg",
+        "48": "icons/icon-colored.svg",
+        "96": "icons/icon-colored.svg"
+    },
+    "page_action": {
+        "default_icon": "icons/icon.svg",
+        "default_title": "Add a custom search engine to this page",
+        "default_popup": "popup/popup.html",
+        "browser_style": true,
+        "show_matches": [
+            "http://*/*",
+            "https://*/*"
+        ]
+    }
+}
