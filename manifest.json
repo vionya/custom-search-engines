@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Custom Search Engines",
-    "version": "1.0",
+    "version": "1.1",
     "description": "Add custom search engines for anything",
     "permissions": [
         "activeTab",
