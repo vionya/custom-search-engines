@@ -37,13 +37,15 @@ const generateXMLstring = (name, url, description, form) => {
 const popoverMessage = async (msg, duration = 1.5) => {
   const popover = document.getElementById("popover");
   popover.classList = [];
-  popover.querySelector("p").innerHTML = msg;
+  while (popover.firstChild) popover.removeChild(popover.firstChild);
+  const par = document.createElement("p");
+  par.appendChild(document.createTextNode(msg));
+  popover.appendChild(par);
   await new Promise((resolve) => setTimeout(resolve, duration * 1000));
   popover.classList = ["hidden"];
 };
 
 const handleConfirmButton = async (event) => {
-  let alerts = new Array();
   if (!engineName.value) {
     await popoverMessage("You need to provide a name!");
     return;
