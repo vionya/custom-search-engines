@@ -176,7 +176,7 @@ footer button:active {
   opacity: 0.5;
 }
 
-div#confirmation-popover {
+div#popover {
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -185,11 +185,11 @@ div#confirmation-popover {
   width: 100%;
 }
 
-div#confirmation-popover.hidden {
+div#popover.hidden {
   display: none;
 }
 
-div#confirmation-popover p {
+div#popover p {
   display: flex;
   align-items: center;
   justify-content: center;
