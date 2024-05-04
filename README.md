@@ -4,8 +4,9 @@
 
 *A Firefox extension for easily adding custom search engines*
 
-<img src="./images/popup.png" height="350px"> <img src="./images/context-menu.png" height="350px"><br>
-<img src="./images/searchbar-icon.png">
+<img src="./images/popup-light.png" height="350px"> <img src="./images/popup-dark.png" height="350px"><br>
+<img src="./images/searchbar-icon.png"><br>
+<img src="./images/context-menu.png" height="350px">
 
 ---
 
